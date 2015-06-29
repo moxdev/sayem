@@ -55,12 +55,40 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
 
+/* Bootstrap padding: 70px; required for fixed-top nav*/
+body {
+    padding: 70px;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #666666;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    background-color: #9BC2CF;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
 
+/* Brand color and font*/
+.navbar-brand  b {
+    color: #00a1cb;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+    font-size: 1.546em
+}
 
-
-
-
+/* tranparent navbar*/
+.header .navbar {
+    margin: 0;
+    background-color: #fff;
+    border: 0;
+}
 
 
 
