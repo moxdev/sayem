@@ -60,7 +60,6 @@ textarea {
 
 /* Bootstrap padding: 70px; required for fixed-top nav*/
 body {
-    padding: 70px;
     height: 100%;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -68,26 +67,68 @@ body {
     color: #666666;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
-    background-color: #9BC2CF;
+    background-color: #fff;
     transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
 }
+/*Logo at top of page*/
+.logo-info {
+    /*background-color: #00a1cb;*/
+/*    border-bottom: 1px solid #00a1cb;
+*/}
+#logo img {
+    float: left;
+    width: 5em;
+    height: 5em;
+    padding: 5px;
+    margin-left: 3.9em;
+    /*margin: 1px;*/
+}
+
+#header-moto {
+    margin-top: 35px;
+}
+/* Contact Area on top of page*/
+.contact-area {
+    float: right;
+    color:  #00a1cb;
+}
+.contact-area ul li {
+    display: inline-block;
+    margin-top: 1.8995em;
+    margin-right: 3.9em;
+    font-weight: 500;
+}
+.contact-area ul li a:visited {
+    color:  #00a1cb;
+}
 
 /* Brand color and font*/
 .navbar-brand  b {
-    color: #00a1cb;
+    color: #fff;
     font-family: 'Oswald', sans-serif;
-    font-weight: 900;
+    font-weight: bold;
     font-size: 1.546em
 }
 
 /* tranparent navbar*/
 .header .navbar {
-    margin: 0;
-    background-color: #fff;
-    border: 0;
+    background-color: #00a1cb;
+    padding: 0 4em 0 4em;
+    margin-bottom: 0;
+    border: none;
+
+}
+
+#mainNav li a {
+    color: #fff;
+    font-weight: bold;
+}
+
+#mainSection {
+    border-top: 1px solid #00a1cb;
 }
 
 
@@ -223,4 +264,6 @@ body {
     h3 {
         page-break-after: avoid;
     }
+}
+div#logo {
 }
