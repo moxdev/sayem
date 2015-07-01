@@ -60,7 +60,6 @@ textarea {
 
 /* Bootstrap padding: 70px; required for fixed-top nav*/
 body {
-    padding: 70px;
     height: 100%;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -68,11 +67,26 @@ body {
     color: #666666;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
-    background-color: #9BC2CF;
+    background-color: #fff;
     transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
+}
+/*Logo at top of page*/
+.logo-info {
+    border: 1px solid red;
+}
+#logo {
+    float: left;
+}
+/* Contact Area on top of page*/
+.contact-area {
+    float: right;
+    border: 1px solid red;
+}
+.contact-area ul li {
+    display: inline-block;
 }
 
 /* Brand color and font*/
@@ -86,7 +100,7 @@ body {
 /* tranparent navbar*/
 .header .navbar {
     margin: 0;
-    background-color: #fff;
+    background-color: transparent;
     border: 0;
 }
 
