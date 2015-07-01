@@ -115,10 +115,12 @@ body {
 
 /* tranparent navbar*/
 .header .navbar {
-    background-color: #00a1cb;
+   /* background-color: #00a1cb;*/
     padding: 0 4em 0 4em;
     margin-bottom: 0;
     border: none;
+    background: #11aac9;
+    background: linear-gradient( to bottom, #11aac9 0%, #64d1e7 100%);
 
 }
 
