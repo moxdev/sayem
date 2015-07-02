@@ -152,7 +152,7 @@ footer {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: auto;
-  background: #545454;
+  background: #363839;
   color: #fff;
 }
 
@@ -160,6 +160,18 @@ footer a {
     color: #fff;
 }
 
+/* Fix map marker CSS z-index*/
+address {
+    float: right;
+    margin-right: 30px;
+
+}
+.address-marker {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
 
 
 /* ==========================================================================
