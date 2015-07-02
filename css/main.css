@@ -4,6 +4,8 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    position: relative;
+    min-height: 100%;
 }
 
 ::-moz-selection {
@@ -72,6 +74,7 @@ body {
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
+
 }
 
 /*Logo at top of page*/
@@ -138,12 +141,24 @@ body {
 
 #facility-img {
     padding: 0;
+    position: relative;
 }
  #facility-img img {
 width: 100%;
  }
+footer {
+  position: static;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: auto;
+  background: #545454;
+  color: #fff;
+}
 
-
+footer a {
+    color: #fff;
+}
 
 
 
