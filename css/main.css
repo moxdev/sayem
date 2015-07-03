@@ -4,6 +4,8 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    position: relative;
+    min-height: 100%;
 }
 
 ::-moz-selection {
@@ -72,6 +74,7 @@ body {
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
+
 }
 
 /*Logo at top of page*/
@@ -133,19 +136,119 @@ body {
     background-color: #c8dfe5;
 }
 #mainSection {
+    padding-left: 0;
+    padding-right: 0;
 
 }
 
 #facility-img {
     padding: 0;
+    position: relative;
 }
  #facility-img img {
-width: 100%;
+    width: 100%;
  }
+footer {
+  position: static;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: auto;
+  background: #363839;
+  color: #fff;
+}
 
+footer a {
+    color: #fff;
+}
 
+/* Fix map marker CSS z-index*/
+address {
+    float: right;
+    margin-right: 30px;
 
-
+}
+.address-marker {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+    padding:25px 0 0 0;
+    margin:50px;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+.col-max {
+    /* custom max width */
+    max-width:320px;
+    }
+#services {
+    /*background-image: url("../img/dark-background.jpg");*/
+    height: auto;
+    /*background: rgba(0, 161, 203, 0.64);*/
+    width: 100%;
+    padding:  25px;
+    margin: 0 auto;
+    background: rgba(0, 161, 203, 0.34);
+}
+#services h1 {
+    text-align: center;
+    color: #fff;
+    /*text-transform: uppercase;*/
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    font-weight: 900;
+    padding-top: 20px;
+}
+#service-left {
+    background: radial-gradient( 100px circle at center center, rgba(127,223,243,.9) 0%, rgba(0,163,197,.85) 100%);
+    color: #fff;
+    font-weight: 900;
+    margin-right: 20px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    width: 285px;
+    height: 285px;
+    border-radius: 50%;
+    border: 1px solid #0892D0;
+    box-shadow: 5px 5px 5px #888888;
+}
+#service-middle {
+    background: radial-gradient( 100px circle at center center, rgba(127,223,243,.9) 0%, rgba(0,163,197,.85) 100%);
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    width: 285px;
+    height: 285px;
+    border-radius: 50%;
+    border: 1px solid #0892D0;
+    box-shadow: 5px 5px 5px #888888;
+}
+#service-right {
+    background: radial-gradient( 100px circle at center center, rgba(127,223,243,.9) 0%, rgba(0,163,197,.85) 100%);
+    color: #fff;
+    font-weight: 900;
+    margin-left: 20px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    width: 285px;
+    height: 285px;
+    border-radius: 50%;
+    border: 1px solid #0892D0;
+    box-shadow: 5px 5px 5px #888888;
+}
+.service-icon {
+    font-size: 2em;
+    margin-bottom: .75em;
+}
 
 /* ==========================================================================
    Media Queries
