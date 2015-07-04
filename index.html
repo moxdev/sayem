@@ -21,8 +21,8 @@
 
 <body>
     <header class='header'>
-        <div class="container-fluid">
-            <div class="row logo-info">
+        <div class="container-fluid" id="logo-info">
+            <div class="row">
                 <div class="col-md-3">
                     <div id="logo">
                         <img src="img/logo.jpg" alt="Move Pain Free Logo">
@@ -43,16 +43,16 @@
                 </div>
             </div>
         </div>
-        </div>
         <div class='navbar navbar-default navbar-static-top'>
             <div class='container-fluid'>
                 <a href="#" class="navbar-brand scroll-top logo  animated bounceInLeft"><b>Germantown Orthopedic</b></a>
                 <ul class='nav navbar-nav navbar-right' id='mainNav'>
-                    <li role='presentation' class="active"><a href='#Home'>Home</a></li>
-                    <li role='presentation'><a href='#About'>About Us</a></li>
+                    <li role='presentation' class="active"><a href='#home'>Home</a></li>
+                    <li role='presentation'><a href='#services'>Services</a></li>
+                    <li role='presentation'><a href='#About Us'>About Us</a></li>
                     <li role='presentation'><a href='#Testimonials'>Testimonials</a></li>
-                    <li role='presentation'><a href='#Appointment'>Schedule Appointment</a></li>
                     <li role='presentation'><a href='#Forms'>Forms</a></li>
+                    <li role='presentation'><a href='#Appointment'>Schedule Appointment</a></li>
                     <li role='presentation'><a href='#Contact'>Contact Us</a></li>
                 </ul>
             </div>
@@ -63,93 +63,192 @@
     <div class='container-fluid' id='mainSection'>
         <div class="row">
             <div class="col-md-12" id="facility-img">
-                <img  class="img-responsive" src="img/facility.jpg" alt="Germantown Orthopedic Facility">
+                <img class="img-responsive" src="img/facility.jpg" alt="Germantown Orthopedic Facility">
             </div>
         </div>
-<!-- /facility-img  -->
-            <div class="container" id="services">
-                <h1>Our Services</h1>
-                <div class="row row-centered">
-                    <div class="col-md-3 col-centered col-max well text-center" id="service-left">
-                        <div class="service-icon"><span><i class="fa fa-heartbeat"></i></span></div>
+        <!-- /facility-img  -->
+        <div class="container-fluid" id="services">
+            <h1>Our Services</h1>
+            <!--make own 12 col?-->
+            <div class="row row-centered">
+                <div class="col-md-3 col-centered col-max well text-center" id="service-left">
+                    <div class="service-icon"><span><i class="fa fa-heartbeat"></i></span></div>
+                    <ul class="list-unstyled animated fadeInLeft">
+                        <li>Soft Issue Injuries</li>
+                        <li>Post-Operative Conditions</li>
+                        <li>Overuse Injuries</li>
+                        <li>Sacroilliac</li>
+                    </ul>
+                </div>
+                <!-- service-left -->
+                <div class="col-md-3 col-centered col-max well text-center" id="service-middle">
+                    <div class="service-icon"><span><i class="fa fa-user-md"></i></span></div>
+                    <ul class="list-unstyled animated fadeInDown">
+                        <li>Joint Dysfunction</li>
+                        <li>Arthritis</li>
+                        <li>Whiplash</li>
+                        <li>Tendonitis</li>
+                        <li>something</li>
+                        <!-- CHANGE -->
+                    </ul>
+                </div>
+                <!-- service-middle -->
+                <div class="col-md-3 col-centered col-max well text-center" id="service-right">
+                    <div class="service-icon"><span><i class="fa fa-plus-square"></i></span></div>
+                    <ul class="list-unstyled animated fadeInRight">
+                        <li>Spinal Misallignment</li>
+                        <li>Disc Injuries</li>
+                        <li>Headache</li>
+                        <li>And Many More...</li>
+                        <li>something</li>
+                        <!-- CHANGE -->
+                    </ul>
+                </div>
+                <!-- service-right -->
+            </div>
+            <!-- row -->
+        </div>
+        <!-- services-->
+        <section class="container-fluid" id="about-us">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>About Us</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <!--col-->
+            </div>
+            <!--row-->
+        </section>
+        <!--about-us-->
+        <section class="container-fluid img-responsive" id="testimonials">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>Testimonials</h1>
+                </div>
+                <!-- col -->
+                <!-- Carousel -->
+                <div class="col-md-12" id="my-carousel">
+                    <div id="carousel-test" class="carousel slide" data-ride="carousel" data-interval="6000">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="carousel-content">
+                                    <div>
+                                        <p>Short One</p>
+                                        <p>John Doe</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="item">
+                                <div class="carousel-content">
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        <p>John Doe</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="item">
+                                <div class="carousel-content">
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        <p>John Doe</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- carousel-inner -->
+                        <a class="left carousel-control" href="#carousel-test" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-test" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                    <!-- carousel-test -->
+                </div>
+                <!--col -->
+            </div>
+            <!-- row -->
+        </section>
+        <!-- testimonials-contiainer-->
 
-                        <ul class="list-unstyled">
-                            <li>Soft Issue Injuries</li>
-                            <li>Post-Operative Conditions</li>
-                            <li>Overuse Injuries</li>
-                            <li>Sacroilliac</li>
-                        </ul>
-                    </div> <!-- service-left -->
 
-                    <div class="col-md-3 col-centered col-max well text-center" id="service-middle">
-                        <div class="service-icon"><span><i class="fa fa-user-md"></i></span></div>
-
-                        <ul class="list-unstyled">
-                            <li>Joint Dysfunction</li>
-                            <li>Arthritis</li>
-                            <li>Whiplash</li>
-                            <li>Tendonitis</li>
-                            <li>something</li><!-- CHANGE -->
-                        </ul>
-                    </div> <!-- service-middle -->
-
-                    <div class="col-md-3 col-centered col-max well text-center" id="service-right">
-                        <div class="service-icon"><span><i class="fa fa-plus-square"></i></span></div>
-                        <ul class="list-unstyled">
-                            <li>Spinal Misallignment</li>
-                            <li>Disc Injuries</li>
-                            <li>Headache</li>
-                            <li>And Many More...</li>
-                            <li>something</li><!-- CHANGE -->
-                        </ul>
-                    </div><!-- service-right -->
-
-                </div><!-- row -->
-            </div>  <!-- services-->
-    </div><!--#mainSection-->
-
+        <!-- Form============================= -->
+        <section class="container-fluid" id="forms">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>Forms</h1>
+                </div>
+                <!--col-->
+            </div>
+            <!--row-->
+        </section>
+        <!--forms-->
+        <section class="container-fluid" id="appointment">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>Schedule An Appointment</h1>
+                </div>
+                <!--col-->
+            </div>
+            <!--row-->
+        </section>
+        <!--appointment-->
+    </div>
+    <!--#mainSection-->
     <footer>
         <div class="container-fluid">
             <div class="row">
                 <div class="container">
-
-                <div class="col-md-3" id="footer-links">
-                    <h3>Site Map</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Schedule Appointment</a></li>
-                        <li><a href="#">Forms</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-3">
-                    <p>2nd col</p>
-                </div>
-
-                <div class="col-md-3">
-                    <p>3rd col</p>
-                </div>
-
-                <div class="col-md-3 footer-contact">
-                    <h3>Address:</h3>
-                    <div class="address-marker">
-                        <i class="fa fa-map-marker"></i>
+                    <div class="col-md-3" id="footer-links">
+                        <h3>Site Map</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Forms</a></li>
+                            <li><a href="#">Schedule Appointment</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
                     </div>
-                    <address>
-                            Suite 200 <br>
-                            123 Doctor Dr<br>
-                            Germantown MD  20874 <br>
-                    </address>
+                    <div class="col-md-3">
+                        <p>2nd col</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>3rd col</p>
+                    </div>
+                    <div class="col-md-3 footer-contact">
+                        <h3>Address:</h3>
+                        <div class="address-marker">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <address>
+                            Suite 200
+                            <br> 123 Doctor Dr
+                            <br> Germantown MD 20874
+                            <br>
+                        </address>
+                    </div>
                 </div>
-
             </div>
-
         </div>
-        </div>
-
     </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
@@ -157,6 +256,6 @@
     </script>
     <script src="js/main.js"></script>
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    <script src="js/vendor/bootstrap.js"
-    </body>
-    < /html>
+    <script src="js/vendor/bootstrap.js"></script>
+</body>
+< /html>
