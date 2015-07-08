@@ -109,7 +109,7 @@
             <!-- row -->
         </div>
         <!-- services-->
-        <section class="container" id="about-us">
+        <section class="container-fluid" id="about-us">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h1>About Us</h1>
@@ -120,7 +120,7 @@
             <!--row-->
         </section>
         <!--about-us-->
-        <section class="container img-responsive" id="testimonials">
+        <section class="container-fluid img-responsive" id="testimonials">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h1>Testimonials</h1>
@@ -130,6 +130,11 @@
                 <div class="col-md-12" id="my-carousel">
                     <div id="carousel-test" class="carousel slide well" data-ride="carousel" data-interval="6000">
                         <div class="carousel-inner">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-test" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-test" data-slide-to="1"></li>
+                                <li data-target="#carousel-test" data-slide-to="2"></li>
+                            </ol>
                             <div class="item active">
                                 <div class="carousel-content">
                                     <div>
@@ -142,17 +147,7 @@
                             <div class="item">
                                 <div class="carousel-content">
                                     <div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                         <p>John Doe</p>
                                     </div>
                                 </div>
@@ -161,12 +156,7 @@
                             <div class="item">
                                 <div class="carousel-content">
                                     <div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                         <p>John Doe</p>
                                     </div>
                                 </div>
@@ -187,15 +177,13 @@
             <!-- row -->
         </section>
         <!-- testimonials-contiainer-->
-
-
         <!-- Form============================= -->
-        <section class="container" id="forms">
+        <section class="container-fluid" id="forms">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h1>Forms</h1>
                     <!-- CHANGE DOWNLOAD FILE -->
-                        <p>Download Our New Patient Forms Below</p>
+                    <p>Download Our New Patient Forms Below</p>
                     <a href="download/download_file.pdf" download="New Patient Forms.pdf" class="btn btn-lg btn-default"><span><i class="fa fa-download"></i></span> Download</a>
                 </div>
                 <!--col-->
@@ -203,10 +191,86 @@
             <!--row-->
         </section>
         <!--forms-->
-        <section class="container" id="appointment">
+        <!-- Scheul Appopintments -->
+        <section class="container-fluid" id="appointment">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h1>Schedule An Appointment</h1>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">
+                        Schedule An Appointment
+                    </button>
+                    <!-- Modal -->
+                    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">Contact Us</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="form-horizontal" name="commentform" method="post" action="send_form_email.php">
+                                        <div class="form-group">
+                                            <label class="control-label col-md-4" for="first_name">First Name <span class="required">*</span></label>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name" autofocus />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-4" for="last_name">Last Name <span class="required">*</span></label>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-4" for="tel">Phone Number <span class="required">*</span></label>
+                                            <div class="col-md-6 input-group">
+                                                <input type="tel" class="form-control" id="tel" name="tel" placeholder="Phone Number" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-4" for="time">Preferred Time</label>
+                                            <div class="col-md-6 input-group">
+                                                <input type="tel" class="form-control" id="time" name="time" placeholder="Preferred Appointment Time" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-4" for="email">Email Address</label>
+                                            <div class="col-md-6 input-group">
+                                                <span class="input-group-addon">@</span>
+                                                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-4" for="new_patient">Are You New Patient?</label>
+                                            <div class="col-md-3">
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="yes-radio">Yes</label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="no-radio">No</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-4" for="description">Description of Issue:</label>
+                                            <div class="col-md-6">
+                                                <textarea rows="6" class="form-control" id="description" name="description" placeholder="Please provide a brief description of your symptoms..."></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <button type="submit" value="Submit" class="btn btn-custom pull-right">Send</button>
+                                            </div>
+                                        </div>
+                                        <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
+                                    </form>
+                                </div>
+                                <!-- End of Modal body -->
+                            </div>
+                            <!-- End of Modal content -->
+                        </div>
+                        <!-- End of Modal dialog -->
+                    </div>
+                    <!-- End of Modal -->
                 </div>
                 <!--col-->
             </div>
@@ -238,16 +302,19 @@
                         <p>3rd col</p>
                     </div>
                     <div class="col-md-3 footer-contact">
-                        <h3>Address:</h3>
+                        <h3>Our Contact:</h3>
+                        <h4>Phone:</h4>
+                        <span><i class="fa fa-phone-square"></i> <a href="tel:+12407313701" class="phone">(240) 731-3701</a></span>
+                        <h4>Address:</h4>
+                        <address><a href="https://www.google.com/maps/place/12800+Middlebrook+Rd,+Germantown,+MD+20874/@39.1775595,-77.2655397,17z/data=!3m1!4b1!4m2!3m1!1s0x89b62c3fda445ecf:0x4155cffd064bc1a9" title="Google Maps" target="_blank">
+                            Suite 420
+                            <br>12800 Middlebrook Rd
+                            <br>Germantown MD 20874
+                            <br></a>
+                        </address>
                         <div class="address-marker">
                             <i class="fa fa-map-marker"></i>
                         </div>
-                        <address>
-                            Suite 200
-                            <br> 123 Doctor Dr
-                            <br> Germantown MD 20874
-                            <br>
-                        </address>
                     </div>
                 </div>
             </div>
@@ -261,4 +328,4 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="js/vendor/bootstrap.js"></script>
 </body>
-< /html>
+</html>

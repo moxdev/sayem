@@ -1,3 +1,4 @@
+// set the height automatically by the largest element in carousel
 setCarouselHeight('#carousel-test');
 
     function setCarouselHeight(id)
@@ -18,3 +19,8 @@ setCarouselHeight('#carousel-test');
             $(this).css('height',max+'px');
         });
     }
+
+// Autofocus for first element in #appointment modal
+$('#myModal').on('shown.bs.modal', function() {
+  $(this).find('input:first').focus();
+});
