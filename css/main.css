@@ -165,18 +165,7 @@ footer a {
     color: #fff;
 }
 
-/* Fix map marker CSS z-index*/
-address {
-    float: right;
-    margin-right: 30px;
 
-}
-.address-marker {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-}
 /*=============  centered columns styles -begin =======================*/
 .row-centered {
     text-align:center;
@@ -307,9 +296,59 @@ Carousel ----------------------
     text-shadow: 1px 1px 2px rgba(0,0,0,.7);
 
 }
+/*========== Appointment =================*/
 
-/*===========================*/
+/* Aligns email field with other fields */
+.input-group[class*="col-"] {
+    padding-right: 15px;
+    padding-left: 15px;
+    }
 
+
+.footer-contact {
+}
+
+    /* Fix map marker CSS z-index*/
+address {
+    /*float: right;*/
+    /*margin-right: 30px;*/
+    margin-left: 30px;
+    padding: 5px;
+
+
+}
+.address-marker {
+    /*position: static;*/
+    color: #5cb85c;
+    text-shadow: 1px 1px #ffffff;
+    left: 10pxstatic;
+    left: 1px;
+    /* left: 10px; */
+    /* top: 60px; */
+    font-size: 2em;
+    position: absolute;
+    bottom: 30px;
+
+}
+
+address a:hover {
+    text-decoration: none;
+    color: #5cb85c;
+}
+
+.footer-contact h4 {
+    margin-left: 35px;
+    text-decoration: underline;
+}
+.footer-contact .fa-phone-square {
+    color: #5cb85c;
+    font-size: 1.5em;
+    top: 85px;
+    left: 1px;
+    position: absolute;
+    text-shadow: 1px 1px #ffffff;
+
+}
 
 /* ==========================================================================
    Media Queries
@@ -438,4 +477,9 @@ Carousel ----------------------
     }
 }
 div#logo {
+}
+
+
+a.phone {
+    margin-left: 30px;;
 }
