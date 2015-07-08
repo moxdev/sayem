@@ -151,20 +151,6 @@ body {
  #facility-img img {
     width: 100%;
  }
-footer {
-  position: static;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: auto;
-  background: #363839;
-  color: #fff;
-}
-
-footer a {
-    color: #fff;
-}
-
 
 /*=============  centered columns styles -begin =======================*/
 .row-centered {
@@ -304,8 +290,20 @@ Carousel ----------------------
     padding-left: 15px;
     }
 
+footer {
+  position: static;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: auto;
+  background: #363839;
+  color: #fff;
+}
 
-.footer-contact {
+footer a {
+    color: #fff;
+}
+#footer-contact {
 }
 
     /* Fix map marker CSS z-index*/
@@ -335,12 +333,24 @@ address a:hover {
     text-decoration: none;
     color: #5cb85c;
 }
+#footer-follow-us {
+    border: 1px solid red;
+}
 
-.footer-contact h4 {
+/*#footer-contact h4 {
     margin-left: 35px;
     text-decoration: underline;
+}*/
+#footer-site-col {
+        /*border: 1px solid red;*/
 }
-.footer-contact .fa-phone-square {
+
+
+#footer-contact-col {
+        /*border: 1px solid red;*/
+
+}
+#footer-contact .fa-phone-square {
     color: #5cb85c;
     font-size: 1.5em;
     top: 85px;
