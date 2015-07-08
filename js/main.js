@@ -18,9 +18,25 @@ setCarouselHeight('#carousel-test');
         {
             $(this).css('height',max+'px');
         });
-    }
+    };
+
 
 // Autofocus for first element in #appointment modal
 $('#myModal').on('shown.bs.modal', function() {
   $(this).find('input:first').focus();
 });
+
+
+// Smooth scrolling with links
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
