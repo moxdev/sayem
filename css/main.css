@@ -67,7 +67,8 @@ body {
     font-size: 16px;
     line-height: 1.7;
     /*background-color: #fff;*/
-    background: #DCE8EC;
+    /*background: #DCE8EC;*/
+    background-color: #ffffff;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
     transition: all 0.3s linear;
@@ -76,6 +77,27 @@ body {
     -o-transition: all 0.3s linear;
     color: #666666;
 
+}
+
+/* Container-Fluid for all sections */
+.page-section {
+    width: 100%;
+    height: auto;
+    padding: 35px;
+    /*background-color: red;*/
+}
+
+/* Default background and text color for colord sections*/
+.colord {
+    color: #ffffff;
+    background-color: rgb(3,115,146);
+    font-weight: 900;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+
+    /*text-shadow: 0px 0px 3px #000, -1px -1px #000, 1px 1px #000;*/
+}
+.non-colord h1 {
+    color: #222;
 }
 
 /*Logo at top of page*/
@@ -170,81 +192,93 @@ body {
     }
 
     /*=============  centered columns styles - end =======================*/
-
-#services {
-    /*background-image: url("../img/dark-background.jpg");*/
-    height: auto;
-    width: 100%;
-    padding:  25px;
-    margin: 0 auto;
-    /*background: rgba(0, 161, 203, 0.64);*/
-    /*background: rgba(0, 161, 203, 0.34);*/
-    /*background: #27AFD3;*/
-    /*background: rgba(39, 175, 211, .75);*/
-    background: #DCE8EC;
-}
-#services h1 {
+/* SERVICES CSS */
+#services p {
+    margin: 0 100px 40px 100px;
     text-align: center;
-    /*color: #000000;*/
-    /*text-transform: uppercase;*/
-    /*text-shadow: 1px 1px 2px rgba(0,0,0,.7);*/
-    font-weight: 900;
-    padding-top: 20px;
 }
+#services {
+  }
+
 #service-left {
-    background: radial-gradient( 100px circle at center center, rgba(127,223,243,.9) 0%, rgba(0,163,197,.85) 100%);
-    color: #fff;
-    font-weight: 900;
+    /*background: radial-gradient( 100px circle at center center, rgba(127,223,243,.9) 0%, rgba(0,163,197,.85) 100%);*/
+    /*color: #ffffff;*/
     margin-right: 20px;
     text-transform: uppercase;
-    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
     width: 285px;
     height: 285px;
     border-radius: 50%;
-    border: 1px solid #0892D0;
-    box-shadow: 5px 5px 5px #888888;
+    border: 2px solid #037392;
+    background: #D16900;
+    vertical-align: top;
+    /*background-clip: padding-box;*/
+
 }
+
 #service-middle {
-    background: radial-gradient( 100px circle at center center, rgba(127,223,243,.9) 0%, rgba(0,163,197,.85) 100%);
-    color: #fff;
+    /*background: radial-gradient( 100px circle at center center, rgba(127,223,243,.9) 0%, #005f8d 100%);*/
+    /*color: #ffffff;*/
     font-weight: 900;
     text-transform: uppercase;
-    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    /*text-shadow: 1px 1px 1px rgba(0,0,0,.7);*/
     width: 285px;
     height: 285px;
     border-radius: 50%;
-    border: 1px solid #0892D0;
-    box-shadow: 5px 5px 5px #888888;
+    border: 1px solid #037392;
+    background: #009B2F;
+    vertical-align: top;
+
+
+    /*background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #1C6409),
+    color-stop(1, #08FA50)
+);
+background-image: -o-linear-gradient(bottom, #1C6409 0%, #08FA50 100%);
+background-image: -moz-linear-gradient(bottom, #1C6409 0%, #08FA50 100%);
+background-image: -webkit-linear-gradient(bottom, #1C6409 0%, #08FA50 100%);
+background-image: -ms-linear-gradient(bottom, #1C6409 0%, #08FA50 100%);
+background-image: linear-gradient(to bottom, #1C6409 0%, #08FA50 100%);*/
 }
+
 #service-right {
-    background: radial-gradient( 100px circle at center center, rgba(127,223,243,.9) 0%, rgba(0,163,197,.85) 100%);
-    color: #fff;
+    /*background: radial-gradient( 100px circle at center center, rgba(127,223,243,.9) 0%, rgba(0,163,197,.85) 100%);*/
+    /*color: #ffffff;*/
     font-weight: 900;
     margin-left: 20px;
     text-transform: uppercase;
-    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    /*text-shadow: 1px 1px 1px rgba(0,0,0,.7);*/
     width: 285px;
     height: 285px;
     border-radius: 50%;
-    border: 1px solid #0892D0;
-    box-shadow: 5px 5px 5px #888888;
+    border: 2px solid #037392;
+    background: #D1A500;
+    vertical-align: top;
+
 }
 .service-icon {
     font-size: 2em;
-    margin-bottom: .75em;
+/*    margin-bottom: .5em;
+*/    border-radius: 50%;
+    /*background: #037392;*/
+    width: 75px;
+    height: 70px;
+    margin-left: 80px;
 }
-
-#about-us {
-    background-color: #27AFD3;
-    color: #ffffff;
+/* About Us */
+#about-us h1 {
+    color: #222;
+}
+#about-us p {
+    /*color: #858585;*/
 }
 #testimonials {
-    height: auto;
-    padding: 0;
 
 }
 
-Carousel ----------------------
+/*---------- Carousel ----------------------*/
 #my-carousel {
 
 }
@@ -269,27 +303,51 @@ Carousel ----------------------
 
 }
 
-
-#forms {
-    background-color: #27AFD3;
-    color: #ffffff;
-    padding-bottom: 25px;
+#forms p {
+    margin: 40px 100px 0 100px;
+    text-align: center;
 }
 
 #forms .btn {
-    background-color: #DCE8EC;
-    color: #ffffff;
-    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
-
+    background-color: rgb(3,115,146);
+    color: #fff;
+    margin-top: 40px;
 }
 /*========== Appointment =================*/
+#appointment {
+/*    height: auto;
+*/}
+#appointment p {
+    margin: 40px 100px 0 100px;
+    text-align: center;
+}
+#appointment a {
+    color: #fff;
+    text-decoration: underline;
+}
 
-/* Aligns email field with other fields */
+#appointment .btn {
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+/* Modal: Aligns email field with other fields */
 .input-group[class*="col-"] {
     padding-right: 15px;
     padding-left: 15px;
     }
 
+.modal-body {
+    background-color: rgb(3,115,146);
+}
+
+.modal-title {
+    color: #222;
+    text-transform: uppercase;
+}
+
+
+/* FOOTER CSS */
 footer {
   position: static;
   bottom: 0;
