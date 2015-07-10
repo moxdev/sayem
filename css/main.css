@@ -199,20 +199,37 @@ body {
 }
 #services {
   }
+  .fa-plus-square, .fa-heartbeat,  .fa-user-md {
+    color: #FF0000;
+    text-shadow: none;
+
+}
 
 #service-left {
     /*background: radial-gradient( 100px circle at center center, rgba(127,223,243,.9) 0%, rgba(0,163,197,.85) 100%);*/
-    /*color: #ffffff;*/
     margin-right: 20px;
     text-transform: uppercase;
     width: 285px;
     height: 285px;
     border-radius: 50%;
     border: 2px solid #037392;
-    background: #D16900;
+    /*background: #D16900;*/
     vertical-align: top;
     /*background-clip: padding-box;*/
+     /*background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #1C6409),
+    color-stop(1, #08FA50)
+);
+background-image: -o-linear-gradient(bottom, #1C6409 0%, #08FA50 100%);
+background-image: -moz-linear-gradient(bottom, #1C6409 0%, #08FA50 100%);
+background-image: -webkit-linear-gradient(bottom, #1C6409 0%, #08FA50 100%);
+background-image: -ms-linear-gradient(bottom, #1C6409 0%, #08FA50 100%);
+background-image: linear-gradient(to bottom, #1C6409 0%, #08FA50 100%);*/
 
+    color: #222;
 }
 
 #service-middle {
@@ -225,9 +242,9 @@ body {
     height: 285px;
     border-radius: 50%;
     border: 1px solid #037392;
-    background: #009B2F;
+    /*background: #009B2F;*/
     vertical-align: top;
-
+   color: #222;
 
     /*background-image: -webkit-gradient(
     linear,
@@ -246,7 +263,7 @@ background-image: linear-gradient(to bottom, #1C6409 0%, #08FA50 100%);*/
 #service-right {
     /*background: radial-gradient( 100px circle at center center, rgba(127,223,243,.9) 0%, rgba(0,163,197,.85) 100%);*/
     /*color: #ffffff;*/
-    font-weight: 900;
+    font-weight: 500;
     margin-left: 20px;
     text-transform: uppercase;
     /*text-shadow: 1px 1px 1px rgba(0,0,0,.7);*/
@@ -254,8 +271,9 @@ background-image: linear-gradient(to bottom, #1C6409 0%, #08FA50 100%);*/
     height: 285px;
     border-radius: 50%;
     border: 2px solid #037392;
-    background: #D1A500;
     vertical-align: top;
+    color: #222;
+/*    background: #D1A500;*/
 
 }
 .service-icon {
@@ -361,32 +379,42 @@ footer {
 footer a {
     color: #fff;
 }
-#footer-contact {
+#footer-contact-col {
+    border: 1px solid red;
 }
 
     /* Fix map marker CSS z-index*/
 address {
-    /*float: right;*/
+    float: right;
     /*margin-right: 30px;*/
-    margin-left: 30px;
-    padding: 5px;
+    /*margin-left: 30px;*/
+    /*padding: 5px;*/
+    /*text-align: left;*/
+    padding-right: 45px;
 
 
 }
-.address-marker {
+#footer-contact-col .fa-envelope, .fa-phone {
+    font-size: 2em;
+    padding-right: 20px;
+    vertical-align: middle;
+}
+.fa-car {
     /*position: static;*/
-    color: #5cb85c;
-    text-shadow: 1px 1px #ffffff;
-    left: 10pxstatic;
+    /*color: #5cb85c;*/
+    /*text-shadow: 1px 1px #ffffff;*/
+    /*left: 10pxstatic;*/
     left: 1px;
-    /* left: 10px; */
-    /* top: 60px; */
     font-size: 2em;
     position: absolute;
-    bottom: 30px;
-
+    bottom: 25px;
+    padding-left: 13px;
+    vertical-align: middle;
 }
 
+#phone-number, #email-address {
+    /*font-size: 1em;*/
+}
 address a:hover {
     text-decoration: none;
     color: #5cb85c;
@@ -418,7 +446,12 @@ address a:hover {
 
 }
 
-/* ==========================================================================
+#footer-site-col ul li {
+    display: inline-block;
+
+}
+
+/*==========================================================================
    Media Queries
    ========================================================================== */
 
