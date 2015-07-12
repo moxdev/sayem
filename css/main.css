@@ -59,11 +59,13 @@ textarea {
    ========================================================================== */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Archivo+Black);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,800,900);
 
 /* Bootstrap padding: 70px; required for fixed-top nav*/
 body {
     height: 100%;
-    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.7;
     /*background-color: #fff;*/
@@ -76,6 +78,7 @@ body {
     -moz-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
     color: #666666;
+    font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -87,18 +90,7 @@ body {
     /*background-color: red;*/
 }
 
-/* Default background and text color for colord sections*/
-.colord {
-    color: #ffffff;
-    background-color: rgb(3,115,146);
-    font-weight: 900;
-    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
 
-    /*text-shadow: 0px 0px 3px #000, -1px -1px #000, 1px 1px #000;*/
-}
-.non-colord h1 {
-    color: #222;
-}
 
 /*Logo at top of page*/
 #logo-info {
@@ -109,35 +101,46 @@ body {
     width: 5em;
     height: 5em;
     padding: 5px;
-    margin-left: 3.9em;
+    margin-left: 2em;
     /*margin: 1px;*/
 }
 
 #header-moto {
     margin-top: 35px;
+    /*color: #222;*/
+    /*font-weight: 900;*/
 }
 /* Contact Area on top of page*/
 .contact-area {
     float: right;
     color:  #00a1cb;
 }
+.contact-area ul {
+    padding-right: 40px;
+}
 .contact-area ul li {
     display: inline-block;
     margin-top: 1.8995em;
-    margin-right: 3.9em;
-    font-weight: 500;
+    margin-right: 1.5em;
+    /*font-weight: 900;*/
 }
 .contact-area ul li a:visited {
     color:  #00a1cb;
 }
 
-/* Brand color and font*/
+/* Brand color/font/position */
+.navbar-brand {
+    margin-right: 50px;
+    padding: 12px 0px 0 0;
+}
+
 .navbar-brand  b {
     color: #fff;
     font-family: 'Oswald', sans-serif;
-    font-weight: bold;
-    font-size: 1.546em;
-    text-shadow: 1px 1px #000000;
+    /*font-weight: bold;*/
+    font-size: 1.8em;
+    text-shadow: 0px 1px 1px #000;
+    /*margin: 0px;*/
 }
 
 /* tranparent navbar*/
@@ -154,7 +157,10 @@ body {
 #mainNav li a {
     color: #fff;
     font-weight: bold;
-    text-shadow: 1px 1px #000000;
+    text-shadow: 0px 1px 1px #000;
+    font-size: 1em;
+    /*margin: 0;*/
+    padding: 15px 5px 15px 10px;
 }
 .navbar #mainNav .active a {
     background-color: #c8dfe5;
@@ -192,29 +198,55 @@ body {
     }
 
     /*=============  centered columns styles - end =======================*/
+
+    /* Default background and text color for colord sections*/
+.colord {
+    color: #ffffff;
+    background-color: rgb(3,115,146);
+    text-shadow: 0px 1px 1px #000;
+    font-weight: 900;
+
+    /*text-shadow: 1px 1px 2px rgba(0,0,0,.7);*/
+
+    /*text-shadow: 0px 0px 3px #000, -1px -1px #000, 1px 1px #000;*/
+}
+.non-colord {
+    background: #f5f5f5;
+}
+.non-colord h1 {
+    color: #222;
+}
 /* SERVICES CSS */
 #services p {
     margin: 0 100px 40px 100px;
     text-align: center;
 }
 #services {
+    background: #f5f5f5;
   }
   .fa-plus-square, .fa-heartbeat,  .fa-user-md {
-    color: #FF0000;
-    text-shadow: none;
+    /*color: #FF0000;*/
+    /*text-shadow: none;*/
 
 }
 
-#service-left {
-    /*background: radial-gradient( 100px circle at center center, rgba(127,223,243,.9) 0%, rgba(0,163,197,.85) 100%);*/
-    margin-right: 20px;
-    text-transform: uppercase;
+#service-left, #service-middle, #service-right {
+    /*text-transform: uppercase;*/
     width: 285px;
     height: 285px;
     border-radius: 50%;
     border: 2px solid #037392;
-    /*background: #D16900;*/
     vertical-align: top;
+    background: #037392;
+    color: #fff;
+    text-shadow: 0px 1px 1px #000;
+}
+
+#service-left {
+        margin-right: 20px;
+}
+    /*background: radial-gradient( 100px circle at center center, rgba(127,223,243,.9) 0%, rgba(0,163,197,.85) 100%);*/
+    /*background: #D16900;*/
     /*background-clip: padding-box;*/
      /*background-image: -webkit-gradient(
     linear,
@@ -229,23 +261,21 @@ background-image: -webkit-linear-gradient(bottom, #1C6409 0%, #08FA50 100%);
 background-image: -ms-linear-gradient(bottom, #1C6409 0%, #08FA50 100%);
 background-image: linear-gradient(to bottom, #1C6409 0%, #08FA50 100%);*/
 
-    color: #222;
-}
 
-#service-middle {
-    /*background: radial-gradient( 100px circle at center center, rgba(127,223,243,.9) 0%, #005f8d 100%);*/
-    /*color: #ffffff;*/
-    font-weight: 900;
+/*#service-middle {
+    font-weight: 500;
     text-transform: uppercase;
-    /*text-shadow: 1px 1px 1px rgba(0,0,0,.7);*/
     width: 285px;
     height: 285px;
     border-radius: 50%;
-    border: 1px solid #037392;
-    /*background: #009B2F;*/
+    border: 2px solid #037392;
     vertical-align: top;
-   color: #222;
+    color: #141414;
+}*/
 
+    /*background: #009B2F;*/
+    /*text-shadow: 1px 1px 1px rgba(0,0,0,.7);*/
+    /*background: radial-gradient( 100px circle at center center, rgba(127,223,243,.9) 0%, #005f8d 100%);*/
     /*background-image: -webkit-gradient(
     linear,
     left top,
@@ -258,24 +288,23 @@ background-image: -moz-linear-gradient(bottom, #1C6409 0%, #08FA50 100%);
 background-image: -webkit-linear-gradient(bottom, #1C6409 0%, #08FA50 100%);
 background-image: -ms-linear-gradient(bottom, #1C6409 0%, #08FA50 100%);
 background-image: linear-gradient(to bottom, #1C6409 0%, #08FA50 100%);*/
-}
 
 #service-right {
+    margin-left: 25px;
+}
     /*background: radial-gradient( 100px circle at center center, rgba(127,223,243,.9) 0%, rgba(0,163,197,.85) 100%);*/
     /*color: #ffffff;*/
-    font-weight: 500;
-    margin-left: 20px;
-    text-transform: uppercase;
+    /*font-weight: 500;
+    text-transform: uppercase;*/
     /*text-shadow: 1px 1px 1px rgba(0,0,0,.7);*/
-    width: 285px;
+    /*width: 285px;
     height: 285px;
     border-radius: 50%;
     border: 2px solid #037392;
     vertical-align: top;
-    color: #222;
+    color: #222;*/
 /*    background: #D1A500;*/
 
-}
 .service-icon {
     font-size: 2em;
 /*    margin-bottom: .5em;
@@ -286,40 +315,53 @@ background-image: linear-gradient(to bottom, #1C6409 0%, #08FA50 100%);*/
     margin-left: 80px;
 }
 /* About Us */
-#about-us h1 {
+/*#about-us h1 {
     color: #222;
-}
+}*/
 #about-us p {
     /*color: #858585;*/
 }
-#testimonials {
+/* Testimonial Section */
 
-}
 
 /*---------- Carousel ----------------------*/
-#my-carousel {
-
+.carousel-content {
+padding: 60px 0;
+margin: 0;
+text-align: center;
+/*background: #269B9E;*/
+}
+.carousel-content p {
+color: #222;
+font-size: 16px;
+line-height: 30px;
+font-style: italic;
+}
+/*.carousel-indicators {
+bottom: 30px;
+}*/
+.carousel-inner {
+    margin: 0 auto;
+    padding: 0 auto;
 }
 
 /*Removes Bootstrap carousel standard background gradient*/
 .carousel-control.right, .carousel-control.left {
-  background-image:none;
+  display:none;
 }
-.carousel-content {
-    color:black;
-    text-align: center;
-}
-.carousel-inner {
-    background-color: #27AFD3;
+/*carousel-inner {
     margin: auto;
-}
-.carousel-inner .item p {
+    background-color: #27AFD3;
+}*/
+/*.carousel-inner p {
     padding-left: 125px;
-    padding-right: 125px;
-    margin-top: 20px;
-        color: #ffffff;
-
-}
+    padding-right: 125px;*/
+/*    margin: 20px;
+*/    /*color: #ffffff;*/
+/*}*/
+/*.carousel-indicators {
+    bottom: 0;
+}*/
 
 #forms p {
     margin: 40px 100px 0 100px;
@@ -327,9 +369,12 @@ background-image: linear-gradient(to bottom, #1C6409 0%, #08FA50 100%);*/
 }
 
 #forms .btn {
+    /*background-color: #f5f5f5;*/
     background-color: rgb(3,115,146);
     color: #fff;
+    /*color: rgb(3,115,146);*/
     margin-top: 40px;
+    text-shadow: none;
 }
 /*========== Appointment =================*/
 #appointment {
@@ -340,13 +385,15 @@ background-image: linear-gradient(to bottom, #1C6409 0%, #08FA50 100%);*/
     text-align: center;
 }
 #appointment a {
-    color: #fff;
-    text-decoration: underline;
+    color: rgb(3,115,146);
+    /*text-decoration: underline;*/
 }
 
 #appointment .btn {
-    background-color: #fff;
+    /*background-color: rgb(3,115,146);*/
+    border: 1px solid rgb(3,115,146);
     margin-top: 40px;
+    color: rgb(3,115,146);
 }
 
 /* Modal: Aligns email field with other fields */
@@ -357,6 +404,13 @@ background-image: linear-gradient(to bottom, #1C6409 0%, #08FA50 100%);*/
 
 .modal-body {
     background-color: rgb(3,115,146);
+    color: #fff;
+        text-shadow: 0px 1px 1px #000;
+
+}
+/* Modal email icon */
+.input-group-addon {
+    text-shadow: none;
 }
 
 .modal-title {
@@ -380,7 +434,7 @@ footer a {
     color: #fff;
 }
 #footer-contact-col {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
     /* Fix map marker CSS z-index*/
@@ -394,7 +448,7 @@ address {
 
 
 }
-#footer-contact-col .fa-envelope, .fa-phone {
+#footer-contact-col .fa-envelope, #footer-contact-col .fa-phone {
     font-size: 2em;
     padding-right: 20px;
     vertical-align: middle;
