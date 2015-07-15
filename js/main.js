@@ -36,7 +36,17 @@ $('#myModal').on('shown.bs.modal', function() {
 
         $('html, body').animate({
             'scrollTop': $target.offset().top
-        }, 900, 'swing', function () {
+        }, 2000, 'swing', function () {
             window.location.hash = target;
         });
     });
+
+// Make all buttons the same size as the largest button for consistency
+$('.btn-size').width(
+    Math.max.apply(
+        Math,
+        $('.btn-size').map(function(){
+            return $(this).outerWidth();
+        }).get()
+    )
+);
