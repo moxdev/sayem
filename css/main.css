@@ -134,10 +134,8 @@ body {
 .navbar-brand  b {
     color: #fff;
     font-family: 'Oswald', sans-serif;
-    /*font-weight: bold;*/
     font-size: 1.8em;
     text-shadow: 0px 1px 1px #000;
-    /*margin: 0px;*/
 }
 
 /* tranparent navbar*/
