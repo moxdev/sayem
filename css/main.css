@@ -102,13 +102,11 @@ body {
     height: 5em;
     padding: 5px;
     margin-left: 2em;
-    /*margin: 1px;*/
 }
 
 #header-moto {
     margin-top: 35px;
-    /*color: #222;*/
-    /*font-weight: 900;*/
+
 }
 /* Contact Area on top of page*/
 .contact-area {
@@ -122,7 +120,6 @@ body {
     display: inline-block;
     margin-top: 1.8995em;
     margin-right: 1.5em;
-    /*font-weight: 900;*/
 }
 .contact-area ul li a:visited {
     color:  #00a1cb;
